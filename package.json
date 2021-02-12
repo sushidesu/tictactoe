@@ -8,7 +8,9 @@
     "start": "NODE_ENV=\"development\" node tools/devserver.js",
     "build": "cpx public/**/* build --clean && esbuild --minify --bundle --outfile=build/index.js --define:process.env.NODE_ENV=\"production\" src/index.tsx",
     "lint": "eslint --ext .ts,.tsx,.js,.jsx ./src",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "keywords": [],
   "author": "",
@@ -18,10 +20,16 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@storybook/addon-actions": "^6.1.17",
+    "@storybook/addon-essentials": "^6.1.17",
+    "@storybook/addon-links": "^6.1.17",
+    "@storybook/react": "^6.1.17",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
+    "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
     "cpx": "^1.5.0",
     "esbuild": "^0.8.44",
