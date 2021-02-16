@@ -1,5 +1,5 @@
 import React from "react"
-import { Global, css } from "@emotion/react"
+import { GlobalStyles } from "styles/global"
 import { Game } from "components/Game"
 import { Marker } from "tictactoe"
 
@@ -10,13 +10,7 @@ export const App = () => {
 
   return (
     <div>
-      <Global
-        styles={css`
-          body {
-            font-family: sans-serif;
-          }
-        `}
-      />
+      <GlobalStyles />
       <Game
         width={WIDTH}
         height={HEIGHT}
