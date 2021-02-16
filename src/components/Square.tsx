@@ -1,13 +1,14 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { Marker } from "tictactoe"
 
 type Props = {
-  value: number
+  marker: Marker
   onClick: () => void
 }
 
-export const Square: React.FC<Props> = ({ value, onClick }) => {
-  return <Button onClick={onClick}>{value}</Button>
+export const Square: React.FC<Props> = ({ marker, onClick }) => {
+  return <Button onClick={onClick}>{marker}</Button>
 }
 
 const Button = styled.button`
