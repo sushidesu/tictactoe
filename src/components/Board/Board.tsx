@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { Marker } from "tictactoe"
-import { Square } from "./Square"
+import { Square } from "components/Square"
 
-type Props = {
+export type Props = {
   width: number
   height: number
   squares: Marker[]
