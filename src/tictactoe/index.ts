@@ -33,7 +33,9 @@ export const useTicTacToe = (initHistory: History, firstPlayer: Player) => {
 
   const squares = history[stepNumber]
   const winner = calculateWinner(squares)
-  const status = winner ? `Winner: ${winner}` : `Next player: ${xIsNext ? "X" : "O"}`
+  const status = winner
+    ? `Winner: ${winner}`
+    : `Next player: ${xIsNext ? "X" : "O"}`
 
   const placeMarker = (index: number) => {
     if (squares[index] || winner) {

@@ -17,7 +17,12 @@ export const App = () => {
           }
         `}
       />
-      <Game width={WIDTH} height={HEIGHT} firstPlayer="X" initHistory={[initBoard]} />
+      <Game
+        width={WIDTH}
+        height={HEIGHT}
+        firstPlayer="X"
+        initHistory={[initBoard]}
+      />
     </div>
   )
 }

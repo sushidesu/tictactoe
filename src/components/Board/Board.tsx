@@ -10,14 +10,25 @@ export type Props = {
   placeMarker: (index: number) => void
 }
 
-export const Board: React.FC<Props> = ({ width, height, squares, placeMarker }) => {
+export const Board: React.FC<Props> = ({
+  width,
+  height,
+  squares,
+  placeMarker,
+}) => {
   return (
     <Wrapper>
       {Array.from({ length: height }).map((_, h) => (
         <div key={h} className="board-row">
           {Array.from({ length: width }).map((_, w) => {
             const index = h * width + w
-            return <Square key={index} marker={squares[index]} onClick={() => placeMarker(index)} />
+            return (
+              <Square
+                key={index}
+                marker={squares[index]}
+                onClick={() => placeMarker(index)}
+              />
+            )
           })}
         </div>
       ))}

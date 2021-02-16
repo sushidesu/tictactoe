@@ -10,13 +10,26 @@ type Props = {
   initHistory: History
 }
 
-export const Game: React.FC<Props> = ({ width, height, firstPlayer, initHistory }) => {
-  const { status, squares, history, placeMarker, jumpTo } = useTicTacToe(initHistory, firstPlayer)
+export const Game: React.FC<Props> = ({
+  width,
+  height,
+  firstPlayer,
+  initHistory,
+}) => {
+  const { status, squares, history, placeMarker, jumpTo } = useTicTacToe(
+    initHistory,
+    firstPlayer
+  )
 
   return (
     <Wrapper>
       <div className="game-board">
-        <Board width={width} height={height} squares={squares} placeMarker={placeMarker} />
+        <Board
+          width={width}
+          height={height}
+          squares={squares}
+          placeMarker={placeMarker}
+        />
       </div>
       <div className="game-info">
         <div className="status">{status}</div>
