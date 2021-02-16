@@ -36,7 +36,13 @@
     "cpx": "^1.5.0",
     "esbuild": "^0.8.44",
     "eslint": "^7.19.0",
+    "husky": "^5.0.9",
+    "lint-staged": ">=10",
     "prettier": "^2.2.1",
     "typescript": "^4.1.5"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx}": "prettier --write"
   }
 }
