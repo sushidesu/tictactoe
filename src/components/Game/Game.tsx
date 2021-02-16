@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 import { Player, History, useTicTacToe } from "tictactoe"
 import { Board } from "components/Board"
 
-type Props = {
+export type Props = {
   width: number
   height: number
   firstPlayer: Player
