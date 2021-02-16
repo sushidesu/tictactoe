@@ -2,7 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { Marker } from "tictactoe"
 
-type Props = {
+export type Props = {
   marker: Marker
   onClick: () => void
 }
