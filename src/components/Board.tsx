@@ -7,12 +7,16 @@ export const Board: React.FC = () => {
   const HEIGHT = 3
   const status = "Next player: X"
   const [squares, setSquares] = useState(Array(WIDTH * HEIGHT).fill(null))
+  const [firstPlayerIsNext, setFirstPlayerIsNext] = useState(true)
 
-  const placeMarker = (index: number) => () => setSquares(prev => {
-    const next = [...prev]
-    next[index] = "X"
-    return next
-  })
+  const placeMarker = (index: number) => () => {
+    setSquares(prev => {
+      const next = [...prev]
+      next[index] = firstPlayerIsNext ? "X" : "O"
+      return next
+    })
+    setFirstPlayerIsNext(prev => !prev)
+  }
 
   return (
     <Wrapper>
