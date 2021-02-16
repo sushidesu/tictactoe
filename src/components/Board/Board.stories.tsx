@@ -6,9 +6,6 @@ import { Board, Props } from "./Board"
 export default {
   title: "TicTacToe/Board",
   component: Board,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } as Meta
 
 const Template: Story<Props> = (args) => <Board {...args} />

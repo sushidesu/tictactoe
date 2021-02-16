@@ -3,13 +3,10 @@ import { Story, Meta } from "@storybook/react/types-6-0"
 
 import { Game, Props } from "./Game"
 
-export default {
+const meta: Meta<Props> = {
   title: "TicTacToe/Game",
   component: Game,
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
-} as Meta
+}
 
 const Template: Story<Props> = (args) => <Game {...args} />
 
@@ -24,7 +21,6 @@ export const Default = Template.bind({})
 Default.args = {
   ...baseArgs,
 }
-
 export const WinX = Template.bind({})
 WinX.args = {
   ...baseArgs,
@@ -42,3 +38,5 @@ Draw.args = {
   ...baseArgs,
   initHistory: [["O", "X", "O", "X", "O", "X", "X", "O", "X"]],
 }
+
+export default meta
