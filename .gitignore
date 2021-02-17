@@ -9,3 +9,6 @@ build
 
 # cache
 .eslintcache
+
+# yarn
+yarn-error.log
