@@ -5,7 +5,9 @@ export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
 }
 
-export const decorators = [
+type Decorator = (story: () => JSX.Element) => JSX.Element
+
+export const decorators: Decorator[] = [
   (Story) => (
     <div>
       <GlobalStyles />
