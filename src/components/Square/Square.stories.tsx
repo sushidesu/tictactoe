@@ -23,13 +23,13 @@ Default.args = {
 export const X = Template.bind({})
 X.args = {
   ...baseArgs,
-  marker: "丁",
+  marker: "X",
 }
 
 export const O = Template.bind({})
 O.args = {
   ...baseArgs,
-  marker: "半",
+  marker: "O",
 }
 
 export default meta
