@@ -4,7 +4,7 @@ import { Game } from "components/Game"
 import { Marker } from "tictactoe"
 
 export const App = () => {
-  const WIDTH = 3
+  const WIDTH = 4
   const HEIGHT = 3
   const initBoard: Marker[] = Array(WIDTH * HEIGHT).fill(null)
 
