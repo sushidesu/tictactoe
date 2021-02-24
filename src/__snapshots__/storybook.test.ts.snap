@@ -108,7 +108,7 @@ exports[`Storyshots TicTacToe/App Default 1`] = `
         <div
           className="status"
         >
-          Next player: X
+          Next player: 丁
         </div>
         <ol>
           <li>
@@ -1040,7 +1040,7 @@ exports[`Storyshots TicTacToe/Square O 1`] = `
     className="css-1cni0a6"
     onClick={[Function]}
   >
-    O
+    半
   </button>
 </div>
 `;
@@ -1067,7 +1067,7 @@ exports[`Storyshots TicTacToe/Square X 1`] = `
     className="css-1cni0a6"
     onClick={[Function]}
   >
-    X
+    丁
   </button>
 </div>
 `;
