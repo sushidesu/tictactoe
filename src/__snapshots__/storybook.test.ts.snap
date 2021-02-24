@@ -50,37 +50,21 @@ exports[`Storyshots TicTacToe/App Default 1`] = `
             <style
               dangerouslySetInnerHTML={
                 Object {
-                  "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+                  "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
                 }
               }
-              data-emotion="css 1cni0a6"
+              data-emotion="css 11azf8d"
             />
             <button
-              className="css-1cni0a6"
+              className="css-11azf8d"
               onClick={[Function]}
             />
             <button
-              className="css-1cni0a6"
+              className="css-11azf8d"
               onClick={[Function]}
             />
             <button
-              className="css-1cni0a6"
-              onClick={[Function]}
-            />
-          </div>
-          <div
-            className="board-row"
-          >
-            <button
-              className="css-1cni0a6"
-              onClick={[Function]}
-            />
-            <button
-              className="css-1cni0a6"
-              onClick={[Function]}
-            />
-            <button
-              className="css-1cni0a6"
+              className="css-11azf8d"
               onClick={[Function]}
             />
           </div>
@@ -88,15 +72,31 @@ exports[`Storyshots TicTacToe/App Default 1`] = `
             className="board-row"
           >
             <button
-              className="css-1cni0a6"
+              className="css-11azf8d"
               onClick={[Function]}
             />
             <button
-              className="css-1cni0a6"
+              className="css-11azf8d"
               onClick={[Function]}
             />
             <button
-              className="css-1cni0a6"
+              className="css-11azf8d"
+              onClick={[Function]}
+            />
+          </div>
+          <div
+            className="board-row"
+          >
+            <button
+              className="css-11azf8d"
+              onClick={[Function]}
+            />
+            <button
+              className="css-11azf8d"
+              onClick={[Function]}
+            />
+            <button
+              className="css-11azf8d"
               onClick={[Function]}
             />
           </div>
@@ -152,47 +152,25 @@ exports[`Storyshots TicTacToe/Board All O 1`] = `
       <style
         dangerouslySetInnerHTML={
           Object {
-            "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+            "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
           }
         }
-        data-emotion="css 1cni0a6"
+        data-emotion="css 11azf8d"
       />
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         O
       </button>
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         O
       </button>
       <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      >
-        O
-      </button>
-    </div>
-    <div
-      className="board-row"
-    >
-      <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      >
-        O
-      </button>
-      <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      >
-        O
-      </button>
-      <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         O
@@ -202,19 +180,41 @@ exports[`Storyshots TicTacToe/Board All O 1`] = `
       className="board-row"
     >
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         O
       </button>
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         O
       </button>
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
+        onClick={[Function]}
+      >
+        O
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-11azf8d"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="css-11azf8d"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="css-11azf8d"
         onClick={[Function]}
       >
         O
@@ -251,47 +251,25 @@ exports[`Storyshots TicTacToe/Board All Triangle 1`] = `
       <style
         dangerouslySetInnerHTML={
           Object {
-            "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+            "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
           }
         }
-        data-emotion="css 1cni0a6"
+        data-emotion="css 11azf8d"
       />
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         △
       </button>
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         △
       </button>
       <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      >
-        △
-      </button>
-    </div>
-    <div
-      className="board-row"
-    >
-      <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      >
-        △
-      </button>
-      <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      >
-        △
-      </button>
-      <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         △
@@ -301,19 +279,41 @@ exports[`Storyshots TicTacToe/Board All Triangle 1`] = `
       className="board-row"
     >
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         △
       </button>
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         △
       </button>
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
+        onClick={[Function]}
+      >
+        △
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-11azf8d"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="css-11azf8d"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="css-11azf8d"
         onClick={[Function]}
       >
         △
@@ -350,47 +350,25 @@ exports[`Storyshots TicTacToe/Board All X 1`] = `
       <style
         dangerouslySetInnerHTML={
           Object {
-            "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+            "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
           }
         }
-        data-emotion="css 1cni0a6"
+        data-emotion="css 11azf8d"
       />
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         X
       </button>
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         X
       </button>
       <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      >
-        X
-      </button>
-    </div>
-    <div
-      className="board-row"
-    >
-      <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      >
-        X
-      </button>
-      <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      >
-        X
-      </button>
-      <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         X
@@ -400,19 +378,41 @@ exports[`Storyshots TicTacToe/Board All X 1`] = `
       className="board-row"
     >
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         X
       </button>
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       >
         X
       </button>
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-11azf8d"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="css-11azf8d"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="css-11azf8d"
         onClick={[Function]}
       >
         X
@@ -449,37 +449,21 @@ exports[`Storyshots TicTacToe/Board Default 1`] = `
       <style
         dangerouslySetInnerHTML={
           Object {
-            "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+            "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
           }
         }
-        data-emotion="css 1cni0a6"
+        data-emotion="css 11azf8d"
       />
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       />
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       />
       <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      />
-    </div>
-    <div
-      className="board-row"
-    >
-      <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      />
-      <button
-        className="css-1cni0a6"
-        onClick={[Function]}
-      />
-      <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       />
     </div>
@@ -487,15 +471,31 @@ exports[`Storyshots TicTacToe/Board Default 1`] = `
       className="board-row"
     >
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       />
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
         onClick={[Function]}
       />
       <button
-        className="css-1cni0a6"
+        className="css-11azf8d"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-11azf8d"
+        onClick={[Function]}
+      />
+      <button
+        className="css-11azf8d"
+        onClick={[Function]}
+      />
+      <button
+        className="css-11azf8d"
         onClick={[Function]}
       />
     </div>
@@ -544,37 +544,21 @@ exports[`Storyshots TicTacToe/Game Default 1`] = `
           <style
             dangerouslySetInnerHTML={
               Object {
-                "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+                "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
               }
             }
-            data-emotion="css 1cni0a6"
+            data-emotion="css 11azf8d"
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
-            onClick={[Function]}
-          />
-        </div>
-        <div
-          className="board-row"
-        >
-          <button
-            className="css-1cni0a6"
-            onClick={[Function]}
-          />
-          <button
-            className="css-1cni0a6"
-            onClick={[Function]}
-          />
-          <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
         </div>
@@ -582,15 +566,31 @@ exports[`Storyshots TicTacToe/Game Default 1`] = `
           className="board-row"
         >
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="css-11azf8d"
+            onClick={[Function]}
+          />
+          <button
+            className="css-11azf8d"
+            onClick={[Function]}
+          />
+          <button
+            className="css-11azf8d"
             onClick={[Function]}
           />
         </div>
@@ -659,25 +659,25 @@ exports[`Storyshots TicTacToe/Game Draw 1`] = `
           <style
             dangerouslySetInnerHTML={
               Object {
-                "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+                "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
               }
             }
-            data-emotion="css 1cni0a6"
+            data-emotion="css 11azf8d"
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             O
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             X
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             O
@@ -687,19 +687,19 @@ exports[`Storyshots TicTacToe/Game Draw 1`] = `
           className="board-row"
         >
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             X
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             O
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             X
@@ -709,19 +709,19 @@ exports[`Storyshots TicTacToe/Game Draw 1`] = `
           className="board-row"
         >
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             X
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             O
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             X
@@ -792,25 +792,25 @@ exports[`Storyshots TicTacToe/Game Win O 1`] = `
           <style
             dangerouslySetInnerHTML={
               Object {
-                "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+                "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
               }
             }
-            data-emotion="css 1cni0a6"
+            data-emotion="css 11azf8d"
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             O
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             O
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             O
@@ -820,15 +820,15 @@ exports[`Storyshots TicTacToe/Game Win O 1`] = `
           className="board-row"
         >
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
         </div>
@@ -836,15 +836,15 @@ exports[`Storyshots TicTacToe/Game Win O 1`] = `
           className="board-row"
         >
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
         </div>
@@ -913,25 +913,25 @@ exports[`Storyshots TicTacToe/Game Win X 1`] = `
           <style
             dangerouslySetInnerHTML={
               Object {
-                "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+                "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
               }
             }
-            data-emotion="css 1cni0a6"
+            data-emotion="css 11azf8d"
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             X
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             X
           </button>
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           >
             X
@@ -941,15 +941,15 @@ exports[`Storyshots TicTacToe/Game Win X 1`] = `
           className="board-row"
         >
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
         </div>
@@ -957,15 +957,15 @@ exports[`Storyshots TicTacToe/Game Win X 1`] = `
           className="board-row"
         >
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
           <button
-            className="css-1cni0a6"
+            className="css-11azf8d"
             onClick={[Function]}
           />
         </div>
@@ -1006,13 +1006,13 @@ exports[`Storyshots TicTacToe/Square Default 1`] = `
   <style
     dangerouslySetInnerHTML={
       Object {
-        "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+        "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
       }
     }
-    data-emotion="css 1cni0a6"
+    data-emotion="css 11azf8d"
   />
   <button
-    className="css-1cni0a6"
+    className="css-11azf8d"
     onClick={[Function]}
   />
 </div>
@@ -1031,13 +1031,13 @@ exports[`Storyshots TicTacToe/Square O 1`] = `
   <style
     dangerouslySetInnerHTML={
       Object {
-        "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+        "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
       }
     }
-    data-emotion="css 1cni0a6"
+    data-emotion="css 11azf8d"
   />
   <button
-    className="css-1cni0a6"
+    className="css-11azf8d"
     onClick={[Function]}
   >
     O
@@ -1058,13 +1058,13 @@ exports[`Storyshots TicTacToe/Square X 1`] = `
   <style
     dangerouslySetInnerHTML={
       Object {
-        "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+        "__html": ".css-11azf8d{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;color:#e52e4c;}.css-11azf8d:focus{outline:none;}",
       }
     }
-    data-emotion="css 1cni0a6"
+    data-emotion="css 11azf8d"
   />
   <button
-    className="css-1cni0a6"
+    className="css-11azf8d"
     onClick={[Function]}
   >
     X
