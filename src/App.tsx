@@ -16,6 +16,8 @@ export const App = () => {
         height={HEIGHT}
         firstPlayer="X"
         initHistory={[initBoard]}
+        markX={"丁"}
+        markO={"半"}
       />
     </div>
   )

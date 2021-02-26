@@ -1,0 +1,1073 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots TicTacToe/App Default 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <div>
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "body{font-family:sans-serif;}",
+        }
+      }
+      data-emotion="css-global 116sk7q"
+    />
+    <style
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": ".css-c5fbp5{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-c5fbp5 .game-info{margin-left:1rem;}.css-c5fbp5 .game-info .status{font-weight:bold;}",
+        }
+      }
+      data-emotion="css c5fbp5"
+    />
+    <div
+      className="css-c5fbp5"
+    >
+      <div
+        className="game-board"
+      >
+        <style
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ".css-4sztha .board-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}",
+            }
+          }
+          data-emotion="css 4sztha"
+        />
+        <div
+          className="css-4sztha"
+        >
+          <div
+            className="board-row"
+          >
+            <style
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+                }
+              }
+              data-emotion="css 1cni0a6"
+            />
+            <button
+              className="css-1cni0a6"
+              onClick={[Function]}
+            />
+            <button
+              className="css-1cni0a6"
+              onClick={[Function]}
+            />
+            <button
+              className="css-1cni0a6"
+              onClick={[Function]}
+            />
+          </div>
+          <div
+            className="board-row"
+          >
+            <button
+              className="css-1cni0a6"
+              onClick={[Function]}
+            />
+            <button
+              className="css-1cni0a6"
+              onClick={[Function]}
+            />
+            <button
+              className="css-1cni0a6"
+              onClick={[Function]}
+            />
+          </div>
+          <div
+            className="board-row"
+          >
+            <button
+              className="css-1cni0a6"
+              onClick={[Function]}
+            />
+            <button
+              className="css-1cni0a6"
+              onClick={[Function]}
+            />
+            <button
+              className="css-1cni0a6"
+              onClick={[Function]}
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="game-info"
+      >
+        <div
+          className="status"
+        >
+          Next player: 丁
+        </div>
+        <ol>
+          <li>
+            <button
+              onClick={[Function]}
+            >
+              Go to start
+            </button>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Board All O 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-4sztha .board-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}",
+      }
+    }
+    data-emotion="css 4sztha"
+  />
+  <div
+    className="css-4sztha"
+  >
+    <div
+      className="board-row"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+          }
+        }
+        data-emotion="css 1cni0a6"
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Board All Triangle 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-4sztha .board-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}",
+      }
+    }
+    data-emotion="css 4sztha"
+  />
+  <div
+    className="css-4sztha"
+  >
+    <div
+      className="board-row"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+          }
+        }
+        data-emotion="css 1cni0a6"
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Board All X 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-4sztha .board-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}",
+      }
+    }
+    data-emotion="css 4sztha"
+  />
+  <div
+    className="css-4sztha"
+  >
+    <div
+      className="board-row"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+          }
+        }
+        data-emotion="css 1cni0a6"
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Board Default 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-4sztha .board-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}",
+      }
+    }
+    data-emotion="css 4sztha"
+  />
+  <div
+    className="css-4sztha"
+  >
+    <div
+      className="board-row"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+          }
+        }
+        data-emotion="css 1cni0a6"
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      />
+      <button
+        className="css-1cni0a6"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Game Default 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-c5fbp5{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-c5fbp5 .game-info{margin-left:1rem;}.css-c5fbp5 .game-info .status{font-weight:bold;}",
+      }
+    }
+    data-emotion="css c5fbp5"
+  />
+  <div
+    className="css-c5fbp5"
+  >
+    <div
+      className="game-board"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-4sztha .board-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}",
+          }
+        }
+        data-emotion="css 4sztha"
+      />
+      <div
+        className="css-4sztha"
+      >
+        <div
+          className="board-row"
+        >
+          <style
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+              }
+            }
+            data-emotion="css 1cni0a6"
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="game-info"
+    >
+      <div
+        className="status"
+      >
+        Next player: X
+      </div>
+      <ol>
+        <li>
+          <button
+            onClick={[Function]}
+          >
+            Go to start
+          </button>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Game Draw 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-c5fbp5{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-c5fbp5 .game-info{margin-left:1rem;}.css-c5fbp5 .game-info .status{font-weight:bold;}",
+      }
+    }
+    data-emotion="css c5fbp5"
+  />
+  <div
+    className="css-c5fbp5"
+  >
+    <div
+      className="game-board"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-4sztha .board-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}",
+          }
+        }
+        data-emotion="css 4sztha"
+      />
+      <div
+        className="css-4sztha"
+      >
+        <div
+          className="board-row"
+        >
+          <style
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+              }
+            }
+            data-emotion="css 1cni0a6"
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            O
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            X
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            O
+          </button>
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            X
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            O
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            X
+          </button>
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            X
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            O
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            X
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      className="game-info"
+    >
+      <div
+        className="status"
+      >
+        Draw
+      </div>
+      <ol>
+        <li>
+          <button
+            onClick={[Function]}
+          >
+            Go to start
+          </button>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Game Win O 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-c5fbp5{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-c5fbp5 .game-info{margin-left:1rem;}.css-c5fbp5 .game-info .status{font-weight:bold;}",
+      }
+    }
+    data-emotion="css c5fbp5"
+  />
+  <div
+    className="css-c5fbp5"
+  >
+    <div
+      className="game-board"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-4sztha .board-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}",
+          }
+        }
+        data-emotion="css 4sztha"
+      />
+      <div
+        className="css-4sztha"
+      >
+        <div
+          className="board-row"
+        >
+          <style
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+              }
+            }
+            data-emotion="css 1cni0a6"
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            O
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            O
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            O
+          </button>
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="game-info"
+    >
+      <div
+        className="status"
+      >
+        Winner: O
+      </div>
+      <ol>
+        <li>
+          <button
+            onClick={[Function]}
+          >
+            Go to start
+          </button>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Game Win X 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-c5fbp5{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}.css-c5fbp5 .game-info{margin-left:1rem;}.css-c5fbp5 .game-info .status{font-weight:bold;}",
+      }
+    }
+    data-emotion="css c5fbp5"
+  />
+  <div
+    className="css-c5fbp5"
+  >
+    <div
+      className="game-board"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": ".css-4sztha .board-row{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}",
+          }
+        }
+        data-emotion="css 4sztha"
+      />
+      <div
+        className="css-4sztha"
+      >
+        <div
+          className="board-row"
+        >
+          <style
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+              }
+            }
+            data-emotion="css 1cni0a6"
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            X
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            X
+          </button>
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          >
+            X
+          </button>
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+          <button
+            className="css-1cni0a6"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="game-info"
+    >
+      <div
+        className="status"
+      >
+        Winner: X
+      </div>
+      <ol>
+        <li>
+          <button
+            onClick={[Function]}
+          >
+            Go to start
+          </button>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Square Default 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+      }
+    }
+    data-emotion="css 1cni0a6"
+  />
+  <button
+    className="css-1cni0a6"
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Square O 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+      }
+    }
+    data-emotion="css 1cni0a6"
+  />
+  <button
+    className="css-1cni0a6"
+    onClick={[Function]}
+  >
+    半
+  </button>
+</div>
+`;
+
+exports[`Storyshots TicTacToe/Square X 1`] = `
+<div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "body{font-family:sans-serif;}",
+      }
+    }
+    data-emotion="css-global 116sk7q"
+  />
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": ".css-1cni0a6{background-color:transparent;cursor:pointer;border:1px solid #999;font-size:24px;font-weight:bold;line-height:34px;height:34px;margin:-1px -1px 0 0;padding:0;text-align:center;width:34px;}.css-1cni0a6:focus{outline:none;}",
+      }
+    }
+    data-emotion="css 1cni0a6"
+  />
+  <button
+    className="css-1cni0a6"
+    onClick={[Function]}
+  >
+    丁
+  </button>
+</div>
+`;
