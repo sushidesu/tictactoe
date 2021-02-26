@@ -8,6 +8,8 @@ export type Props = {
   height: number
   firstPlayer: Player
   initHistory: History
+  markX?: string
+  markO?: string
 }
 
 export const Game: React.FC<Props> = ({
@@ -15,10 +17,14 @@ export const Game: React.FC<Props> = ({
   height,
   firstPlayer,
   initHistory,
+  markX = "X",
+  markO = "O"
 }) => {
-  const { status, squares, history, placeMarker, jumpTo } = useTicTacToe(
+  const { status, squares, history, placeMarker, jumpTo, renderMarker } = useTicTacToe(
     initHistory,
-    firstPlayer
+    firstPlayer,
+    markX,
+    markO
   )
 
   const onSquareClick = (index: number) => () => placeMarker(index)
@@ -31,6 +37,7 @@ export const Game: React.FC<Props> = ({
           height={height}
           squares={squares}
           onSquareClick={onSquareClick}
+          renderMarker={renderMarker}
         />
       </div>
       <div className="game-info">

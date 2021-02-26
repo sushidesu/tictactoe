@@ -26,18 +26,13 @@ export const calculateWinner = (squares: Marker[]): Player | null => {
   return null
 }
 
-export const useTicTacToe = (initHistory: History, firstPlayer: Player) => {
+export const useTicTacToe = (initHistory: History, firstPlayer: Player, markX: string, markO: string) => {
   const [xIsNext, setXIsNext] = useState(firstPlayer === "X")
   const [stepNumber, setStepNumber] = useState(0)
   const [history, setHistory] = useState<History>(initHistory)
 
   const squares = history[stepNumber]
   const winner = calculateWinner(squares)
-  const status = winner
-    ? `Winner: ${winner}`
-    : squares.every((square) => square !== null)
-    ? `Draw`
-    : `Next player: ${xIsNext ? "X" : "O"}`
 
   const placeMarker = (index: number) => {
     if (squares[index] || winner) {
@@ -57,11 +52,28 @@ export const useTicTacToe = (initHistory: History, firstPlayer: Player) => {
     setXIsNext(step % 2 === 0)
   }
 
+  const renderMarker = (mark: Marker) => {
+    if (mark) {
+      return mark === "X"
+        ? markX
+        : markO
+    } else {
+      return null
+    }
+  }
+
+  const status = winner
+    ? `Winner: ${renderMarker(winner)}`
+    : squares.every((square) => square !== null)
+    ? `Draw`
+    : `Next player: ${xIsNext ? markX : markO}`
+
   return {
     status,
     squares,
     history,
     placeMarker,
     jumpTo,
+    renderMarker,
   }
 }

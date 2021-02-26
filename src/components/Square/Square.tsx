@@ -1,9 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Marker } from "tictactoe"
 
 export type Props = {
-  marker: Marker
+  marker: string | null
   onClick: () => void
 }
 
