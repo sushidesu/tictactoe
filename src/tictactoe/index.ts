@@ -4,7 +4,7 @@ export type Player = "X" | "O"
 
 export type Marker = Player | null
 
-export type History = Marker[][]
+export type History = readonly Marker[][]
 
 export const calculateWinner = (squares: Marker[]): Player | null => {
   const lines = [
@@ -43,15 +43,12 @@ export const useTicTacToe = (initHistory: History, firstPlayer: Player) => {
     if (squares[index] || winner) {
       return
     }
-    setHistory((prev) => {
-      const newHistory = [...prev].slice(0, stepNumber + 1)
-      const current = newHistory[newHistory.length - 1]
-      const _squares = [...current]
-      _squares[index] = xIsNext ? "X" : "O"
+    const newHistory = history.slice(0, stepNumber + 1)
+    const newSquares = [...newHistory[newHistory.length - 1]]
+    newSquares[index] = xIsNext ? "X" : "O"
 
-      setStepNumber(newHistory.length)
-      return newHistory.concat([_squares])
-    })
+    setHistory(newHistory.concat([newSquares]))
+    setStepNumber((prev) => prev + 1)
     setXIsNext((prev) => !prev)
   }
 

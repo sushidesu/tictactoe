@@ -7,14 +7,14 @@ export type Props = {
   width: number
   height: number
   squares: Marker[]
-  placeMarker: (index: number) => void
+  onSquareClick: (index: number) => () => void
 }
 
 export const Board: React.FC<Props> = ({
   width,
   height,
   squares,
-  placeMarker,
+  onSquareClick,
 }) => {
   return (
     <Wrapper>
@@ -26,7 +26,8 @@ export const Board: React.FC<Props> = ({
               <Square
                 key={index}
                 marker={squares[index]}
-                onClick={() => placeMarker(index)}
+                onClick={onSquareClick(index)}
+                // onClick={() => placeMarker(index)}
               />
             )
           })}

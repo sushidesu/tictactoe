@@ -1,5 +1,6 @@
 import React from "react"
 import { Story, Meta } from "@storybook/react/types-6-0"
+import { action } from "@storybook/addon-actions"
 
 import { Board, Props } from "./Board"
 
@@ -13,7 +14,7 @@ const Template: Story<Props> = (args) => <Board {...args} />
 const baseArgs: Props = {
   width: 3,
   height: 3,
-  placeMarker: () => {},
+  onSquareClick: (index) => action(`clicked: ${index}`),
   squares: [],
 }
 

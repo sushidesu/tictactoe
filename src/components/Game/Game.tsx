@@ -21,6 +21,8 @@ export const Game: React.FC<Props> = ({
     firstPlayer
   )
 
+  const onSquareClick = (index: number) => () => placeMarker(index)
+
   return (
     <Wrapper>
       <div className="game-board">
@@ -28,7 +30,7 @@ export const Game: React.FC<Props> = ({
           width={width}
           height={height}
           squares={squares}
-          placeMarker={placeMarker}
+          onSquareClick={onSquareClick}
         />
       </div>
       <div className="game-info">
