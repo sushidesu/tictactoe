@@ -1,6 +1,6 @@
 import React from "react"
 import { Game } from "components/Game"
-import { Marker, History, Player, useTicTacToe } from "tictactoe"
+import { Marker, History, Player, useHandleBoard } from "tictactoe"
 
 export const TicTacToe = () => {
   const WIDTH = 3
@@ -11,7 +11,7 @@ export const TicTacToe = () => {
   const MARK_X = "X"
   const MARK_O = "O"
 
-  const props = useTicTacToe(INIT_HISTORY, FIRST_PLAYER, MARK_X, MARK_O)
+  const props = useHandleBoard(INIT_HISTORY, FIRST_PLAYER, MARK_X, MARK_O)
 
   return (
     <Game

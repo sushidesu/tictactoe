@@ -13,8 +13,7 @@ const Template: Story<Props> = (args) => <Game {...args} />
 const baseArgs: Props = {
   width: 3,
   height: 3,
-  squares: [],
-  winner: null,
+  squares: Array(9).fill(null),
   xIsNext: true,
   history: [[]],
   placeMarker: () => {},
@@ -30,14 +29,12 @@ export const WinX = Template.bind({})
 WinX.args = {
   ...baseArgs,
   squares: ["X", "X", "X", null, null, null, null, null, null],
-  winner: "X"
 }
 
 export const WinO = Template.bind({})
 WinO.args = {
   ...baseArgs,
   squares: ["O", "O", "O", null, null, null, null, null, null],
-  winner: "O"
 }
 
 export const Draw = Template.bind({})

@@ -26,7 +26,7 @@ export const calculateWinner = (squares: Marker[]): Player | null => {
   return null
 }
 
-export const useTicTacToe = (initHistory: History, firstPlayer: Player, markX: string, markO: string) => {
+export const useHandleBoard = (initHistory: History, firstPlayer: Player, markX: string, markO: string) => {
   const [xIsNext, setXIsNext] = useState(firstPlayer === "X")
   const [stepNumber, setStepNumber] = useState(0)
   const [history, setHistory] = useState<History>(initHistory)
@@ -65,7 +65,6 @@ export const useTicTacToe = (initHistory: History, firstPlayer: Player, markX: s
   return {
     squares,
     history,
-    winner,
     xIsNext,
     placeMarker,
     jumpTo,
