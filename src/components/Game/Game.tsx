@@ -12,14 +12,20 @@ export const Game: React.FC<Props> = ({
   width,
   height,
   squares,
-  status,
   history,
+  winner,
+  xIsNext,
   placeMarker,
   jumpTo,
   renderMarker,
 }) => {
 
   const onSquareClick = (index: number) => () => placeMarker(index)
+  const status = winner
+    ? `Winner: ${renderMarker(winner)}`
+    : squares.every((square) => square !== null)
+    ? `Draw`
+    : `Next player: ${xIsNext ? renderMarker("X") : renderMarker("O")}`
 
   return (
     <Wrapper>

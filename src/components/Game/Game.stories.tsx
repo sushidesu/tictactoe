@@ -14,7 +14,8 @@ const baseArgs: Props = {
   width: 3,
   height: 3,
   squares: [],
-  status: "X is Next",
+  winner: null,
+  xIsNext: true,
   history: [[]],
   placeMarker: () => {},
   renderMarker: (marker) => marker,
@@ -28,13 +29,15 @@ Default.args = {
 export const WinX = Template.bind({})
 WinX.args = {
   ...baseArgs,
-  squares: ["X", "X", "X", null, null, null, null, null, null]
+  squares: ["X", "X", "X", null, null, null, null, null, null],
+  winner: "X"
 }
 
 export const WinO = Template.bind({})
 WinO.args = {
   ...baseArgs,
   squares: ["O", "O", "O", null, null, null, null, null, null],
+  winner: "O"
 }
 
 export const Draw = Template.bind({})
