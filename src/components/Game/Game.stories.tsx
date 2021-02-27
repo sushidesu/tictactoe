@@ -18,7 +18,7 @@ const baseArgs: Props = {
   history: [[]],
   placeMarker: () => {},
   renderMarker: (marker) => marker,
-  jumpTo: () => {}
+  jumpTo: () => {},
 }
 
 export const Default = Template.bind({})

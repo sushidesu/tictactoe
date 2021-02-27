@@ -13,11 +13,5 @@ export const TicTacToe = () => {
 
   const props = useHandleBoard(INIT_HISTORY, FIRST_PLAYER, MARK_X, MARK_O)
 
-  return (
-    <Game
-      width={WIDTH}
-      height={HEIGHT}
-      {...props}
-    />
-  )
+  return <Game width={WIDTH} height={HEIGHT} {...props} />
 }

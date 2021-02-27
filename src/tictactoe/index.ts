@@ -26,7 +26,12 @@ export const calculateWinner = (squares: Marker[]): Player | null => {
   return null
 }
 
-export const useHandleBoard = (initHistory: History, firstPlayer: Player, markX: string, markO: string) => {
+export const useHandleBoard = (
+  initHistory: History,
+  firstPlayer: Player,
+  markX: string,
+  markO: string
+) => {
   const [xIsNext, setXIsNext] = useState(firstPlayer === "X")
   const [stepNumber, setStepNumber] = useState(0)
   const [history, setHistory] = useState<History>(initHistory)
@@ -54,9 +59,7 @@ export const useHandleBoard = (initHistory: History, firstPlayer: Player, markX:
 
   const renderMarker = (mark: Marker) => {
     if (mark) {
-      return mark === "X"
-        ? markX
-        : markO
+      return mark === "X" ? markX : markO
     } else {
       return null
     }
