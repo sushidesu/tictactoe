@@ -27,6 +27,7 @@ export const Board: React.FC<Props> = ({
             return (
               <Square
                 key={index}
+                index={index}
                 onClick={onSquareClick(index)}
                 marker={renderMarker(squares[index])}
               />
