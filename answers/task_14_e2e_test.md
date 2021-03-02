@@ -102,7 +102,7 @@ yarn test:integration:open
   - モックが必要な場合もある
   - E2Eはテストケースを考慮する必要はあるものの、実際のアプリの動作を模して書ける
   - モックは不要
-- 実際のユーザーの動作への近さ (近い順)
+- 実際のユーザーの動作への近さ (近い順)
   - E2E > ST/VRT, 統合 > 単体
 
 [E2Eテスト(インテグレーションテスト)の利点と不利点 - Qiita](https://qiita.com/NAKKA-K/items/58d6b8476a3717179bda#e2e%E3%81%AE%E4%BD%BF%E3%81%84%E6%89%80)
@@ -115,7 +115,7 @@ CypressのアサーションにはJestとは違うものが用いられていま
 
 <details><summary>回答例</summary>
 
-Chaiをベースに、Sinon-ChaiとChai-jQueryで拡張したものが使われている。
+Chaiをベースに、Sinon-ChaiとChai-jQueryで拡張したものが使われている。
 
 > Cypress bundles the popular Chai assertion library, as well as helpful extensions for Sinon and jQuery, bringing you dozens of powerful assertions for free.
 >
