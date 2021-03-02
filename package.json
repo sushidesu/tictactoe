@@ -11,7 +11,9 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:integration": "concurrently \"yarn start\" \"cd e2e && yarn cypress:run\"",
+    "test:integration:open": "concurrently \"yarn start\" \"cd e2e && yarn cypress:open\""
   },
   "keywords": [],
   "author": "",
@@ -37,6 +39,7 @@
     "@typescript-eslint/parser": "^4.15.0",
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.26.14",
+    "concurrently": "^6.0.0",
     "cpx": "^1.5.0",
     "esbuild": "^0.8.44",
     "eslint": "^7.19.0",
