@@ -12,6 +12,7 @@ const meta: Meta<Props> = {
 const Template: Story<Props> = (args) => <Square {...args} />
 
 const baseArgs: Props = {
+  index: 0,
   marker: null,
   onClick: action("clicked"),
 }
