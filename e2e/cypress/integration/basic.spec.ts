@@ -64,6 +64,7 @@ describe("Tic Tac Toe", () => {
       // statusを確認
       cy.get(STATUS_ELEMENT).should((element) => {
         expect(element.eq(0)).to.contain("Draw")
+        expect(element.eq(0)).to.not.contain("Winner")
       })
     })
   })
