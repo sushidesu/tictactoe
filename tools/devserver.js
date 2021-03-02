@@ -11,6 +11,7 @@ const build = async () => {
     minify: process.env.NODE_ENV === "production",
     incremental: true,
     bundle: true,
+    logLevel: "error",
     sourcemap: process.env.NODE_ENV === "development",
     define: {
       "process.env.NODE_ENV": `"${process.env.NODE_ENV}"`,
