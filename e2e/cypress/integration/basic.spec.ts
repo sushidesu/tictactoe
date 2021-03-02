@@ -1,4 +1,6 @@
-it("shold perform basic google search", () => {
-  cy.visit("https://google.com")
-  cy.get('[name="q"]').type("subscribe").type("{enter}")
+it("'Next Player: ' が描画されている", () => {
+  cy.visit("/")
+  cy.get(`[data-testid="status"]`).should((element) => {
+    expect(element.eq(0)).to.contain("Next Player: ")
+  })
 })
