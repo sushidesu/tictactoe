@@ -6,7 +6,7 @@ describe("Tic Tac Toe", () => {
     it("'Next Player: X' が描画されている", () => {
       cy.visit("/")
       cy.get(STATUS_ELEMENT).should((element) => {
-        expect(element.eq(0)).to.contain("Next Player: X")
+        expect(element.first()).to.contain("Next Player: X")
       })
     })
   })
@@ -33,7 +33,7 @@ describe("Tic Tac Toe", () => {
 
       // statusを確認
       cy.get(STATUS_ELEMENT).should((element) => {
-        expect(element.eq(0)).to.contain("Winner: X")
+        expect(element.first()).to.contain("Winner: X")
       })
     })
   })
@@ -61,11 +61,16 @@ describe("Tic Tac Toe", () => {
       clickList.forEach((index) => {
         cy.get(getSquareElement(index)).click()
       })
-      // statusを確認
+      // statusを確認 should(chainers, value) を使用
+      cy.get(STATUS_ELEMENT)
+        .should("have.text", "Draw")
+        .and("not.have.text", "Winner")
+      // statusを確認 should(callbackFn) を使用
       cy.get(STATUS_ELEMENT).should((element) => {
-        expect(element.eq(0)).to.contain("Draw")
-        expect(element.eq(0)).to.not.contain("Winner")
+        expect(element.first()).to.contain("Draw")
+        expect(element.first()).to.not.contain("Winner")
       })
+      cy.get(STATUS_ELEMENT)
     })
   })
 })
