@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "start": "NODE_ENV=\"development\" node tools/devserver.js",
-    "build": "cpx public/**/* build --clean && esbuild --minify --bundle --outfile=build/index.js --define:process.env.NODE_ENV=\"production\" src/index.tsx",
+    "build": "cpx public/**/* build --clean && esbuild --minify --bundle --outfile=build/index.js --define:process.env.NODE_ENV='\"production\"' src/index.tsx",
     "lint": "eslint --ext .ts,.tsx,.js,.jsx ./src",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "storybook": "start-storybook -p 6006",
