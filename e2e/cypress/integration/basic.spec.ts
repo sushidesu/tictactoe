@@ -37,4 +37,34 @@ describe("Tic Tac Toe", () => {
       })
     })
   })
+
+  describe("交互にマスを選択し、引き分けになる", () => {
+    it(`"Draw" が描画されている`, () => {
+      cy.visit("/")
+      /**
+       * 以下の盤面を再現
+       * XXO 012
+       * OOX 345
+       * XOX 678
+       */
+      const clickList = [
+        0, // X
+        3, // O
+        1, // X
+        4, // O
+        5, // X
+        2, // O
+        6, // X
+        7, // O
+        8, // X
+      ]
+      clickList.forEach((index) => {
+        cy.get(getSquareElement(index)).click()
+      })
+      // statusを確認
+      cy.get(STATUS_ELEMENT).should((element) => {
+        expect(element.eq(0)).to.contain("Draw")
+      })
+    })
+  })
 })
