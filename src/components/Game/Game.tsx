@@ -18,14 +18,16 @@ export const Game: React.FC<Props> = ({
   firstPlayer,
   initHistory,
   markX = "X",
-  markO = "O"
+  markO = "O",
 }) => {
-  const { status, squares, history, placeMarker, jumpTo, renderMarker } = useTicTacToe(
-    initHistory,
-    firstPlayer,
-    markX,
-    markO
-  )
+  const {
+    status,
+    squares,
+    history,
+    placeMarker,
+    jumpTo,
+    renderMarker,
+  } = useTicTacToe(initHistory, firstPlayer, markX, markO)
 
   const onSquareClick = (index: number) => () => placeMarker(index)
 
@@ -41,7 +43,9 @@ export const Game: React.FC<Props> = ({
         />
       </div>
       <div className="game-info">
-        <div className="status">{status}</div>
+        <div className="status" data-testid="status">
+          {status}
+        </div>
         <ol>
           {history.map((_squares, move) => {
             const desc = move ? `Go to # ${move}` : "Go to start"
