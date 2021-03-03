@@ -1,31 +1,29 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Player, History, useTicTacToe } from "tictactoe"
+import { calculateWinner, useHandleBoard } from "tictactoe"
 import { Board } from "components/Board"
 
-export type Props = {
+export type Props = ReturnType<typeof useHandleBoard> & {
   width: number
   height: number
-  firstPlayer: Player
-  initHistory: History
-  markX?: string
-  markO?: string
 }
 
 export const Game: React.FC<Props> = ({
   width,
   height,
-  firstPlayer,
-  initHistory,
-  markX = "X",
-  markO = "O"
+  squares,
+  history,
+  xIsNext,
+  placeMarker,
+  jumpTo,
+  renderMarker,
 }) => {
-  const { status, squares, history, placeMarker, jumpTo, renderMarker } = useTicTacToe(
-    initHistory,
-    firstPlayer,
-    markX,
-    markO
-  )
+  const winner = calculateWinner(squares)
+  const status = winner
+    ? `Winner: ${renderMarker(winner)}`
+    : squares.every((square) => square !== null)
+    ? `Draw`
+    : `Next player: ${xIsNext ? renderMarker("X") : renderMarker("O")}`
 
   const onSquareClick = (index: number) => () => placeMarker(index)
 
