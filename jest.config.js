@@ -3,5 +3,6 @@ module.exports = {
   testEnvironment: "node",
   moduleDirectories: [
     "node_modules", "src"
-  ]
+  ],
+  snapshotSerializers: ["@emotion/jest/serializer"]
 };
