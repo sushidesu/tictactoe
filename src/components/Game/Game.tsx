@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { calculateWinner, useHandleBoard } from "tictactoe"
+import { useTicTacToe, UseTicTacToeProps } from "tictactoe"
 import { Board } from "components/Board"
 
-export type Props = ReturnType<typeof useHandleBoard> & {
+export type Props = UseTicTacToeProps & {
   width: number
   height: number
 }
@@ -23,7 +23,7 @@ export const Game: React.FC<Props> = ({
     placeMarker,
     jumpTo,
     renderMarker,
-  } = useTicTacToe(initHistory, firstPlayer, markX, markO)
+  } = useTicTacToe({ initHistory, firstPlayer, markX, markO })
 
   const onSquareClick = (index: number) => () => placeMarker(index)
 

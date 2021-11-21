@@ -13,12 +13,10 @@ const Template: Story<Props> = (args) => <Game {...args} />
 const baseArgs: Props = {
   width: 3,
   height: 3,
-  squares: Array(9).fill(null),
-  xIsNext: true,
-  history: [[]],
-  placeMarker: () => {},
-  renderMarker: (marker) => marker,
-  jumpTo: () => {},
+  firstPlayer: "X",
+  initHistory: [[]],
+  markX: "X",
+  markO: "O",
 }
 
 export const Default = Template.bind({})
@@ -28,19 +26,19 @@ Default.args = {
 export const WinX = Template.bind({})
 WinX.args = {
   ...baseArgs,
-  squares: ["X", "X", "X", null, null, null, null, null, null],
+  initHistory: [["X", "X", "X", null, null, null, null, null, null]],
 }
 
 export const WinO = Template.bind({})
 WinO.args = {
   ...baseArgs,
-  squares: ["O", "O", "O", null, null, null, null, null, null],
+  initHistory: [["O", "O", "O", null, null, null, null, null, null]],
 }
 
 export const Draw = Template.bind({})
 Draw.args = {
   ...baseArgs,
-  squares: ["O", "X", "O", "X", "O", "X", "X", "O", "X"],
+  initHistory: [["O", "X", "O", "X", "O", "X", "X", "O", "X"]],
 }
 
 export default meta
