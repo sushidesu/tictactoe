@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import { useTicTacToe, UseTicTacToeProps } from "tictactoe"
 import { Board } from "components/Board"
+import { GameStatus } from "components/GameStatus"
 
 export type Props = UseTicTacToeProps & {
   width: number
@@ -56,9 +57,7 @@ export const Game: React.FC<Props> = ({
         />
       </div>
       <div className="game-info">
-        <div className="status" data-testid="status">
-          {renderStatus()}
-        </div>
+        <GameStatus>{renderStatus()}</GameStatus>
         <ol>
           {history.map((_squares, move) => {
             const desc = move ? `Go to # ${move}` : "Go to start"
@@ -78,8 +77,5 @@ const Wrapper = styled.div`
   display: flex;
   .game-info {
     margin-left: 1rem;
-    .status {
-      font-weight: bold;
-    }
   }
 `
