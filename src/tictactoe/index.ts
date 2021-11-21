@@ -73,11 +73,15 @@ export const useTicTacToe = ({
     }
   }
 
-  const status = winner
-    ? `Winner: ${renderMarker(winner)}`
-    : squares.every((square) => square !== null)
-    ? `Draw`
-    : `Next Player: ${xIsNext ? markX : markO}`
+  type Status = `WIN_X` | `WIN_O` | "DRAW" | `NEXT_X` | `NEXT_O`
+
+  const status: Status = winner
+    ? `WIN_${winner}`
+    : squares.every((square) => square !== "BLANK")
+    ? "DRAW"
+    : xIsNext
+    ? "NEXT_X"
+    : "NEXT_O"
 
   return {
     status,
