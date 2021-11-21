@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 import { useTicTacToe, UseTicTacToeProps } from "tictactoe"
 import { Board } from "components/Board"
 import { GameStatus } from "components/GameStatus"
+import { HistoryButton } from "components/HistoryButton"
 
 export type Props = UseTicTacToeProps & {
   width: number
@@ -59,14 +60,11 @@ export const Game: React.FC<Props> = ({
       <div className="game-info">
         <GameStatus>{renderStatus()}</GameStatus>
         <ol>
-          {history.map((_squares, move) => {
-            const desc = move ? `Go to # ${move}` : "Go to start"
-            return (
-              <li key={move}>
-                <button onClick={() => jumpTo(move)}>{desc}</button>
-              </li>
-            )
-          })}
+          {history.map((_, index) => (
+            <li key={index}>
+              <HistoryButton index={index} onClick={() => jumpTo(index)} />
+            </li>
+          ))}
         </ol>
       </div>
     </Wrapper>
