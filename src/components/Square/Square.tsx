@@ -27,7 +27,6 @@ const Button = styled.button`
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 
   &:focus {
     outline: none;

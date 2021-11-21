@@ -38,7 +38,6 @@ exports[`Storyshots TicTacToe/App Default 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-2:focus {
@@ -162,7 +161,6 @@ exports[`Storyshots TicTacToe/Board All O 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-1:focus {
@@ -275,7 +273,6 @@ exports[`Storyshots TicTacToe/Board All Triangle 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-1:focus {
@@ -388,7 +385,6 @@ exports[`Storyshots TicTacToe/Board All X 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-1:focus {
@@ -501,7 +497,6 @@ exports[`Storyshots TicTacToe/Board Default 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-1:focus {
@@ -611,7 +606,6 @@ exports[`Storyshots TicTacToe/Game Default 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-2:focus {
@@ -748,7 +742,6 @@ exports[`Storyshots TicTacToe/Game Draw 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-2:focus {
@@ -903,7 +896,6 @@ exports[`Storyshots TicTacToe/Game Win O 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-2:focus {
@@ -1046,7 +1038,6 @@ exports[`Storyshots TicTacToe/Game Win X 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-2:focus {
@@ -1164,7 +1155,6 @@ exports[`Storyshots TicTacToe/Square Default 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-0:focus {
@@ -1193,7 +1183,6 @@ exports[`Storyshots TicTacToe/Square O 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-0:focus {
@@ -1224,7 +1213,6 @@ exports[`Storyshots TicTacToe/Square X 1`] = `
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 }
 
 .emotion-0:focus {
