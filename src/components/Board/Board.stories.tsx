@@ -16,7 +16,7 @@ const baseArgs: Props = {
   height: 3,
   onSquareClick: (index) => action(`clicked: ${index}`),
   squares: [],
-  renderMarker: (marker) => marker
+  renderMarker: (marker) => marker,
 }
 
 export const Default = Template.bind({})
