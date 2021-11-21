@@ -26,13 +26,17 @@ Default.args = {
 export const WinX = Template.bind({})
 WinX.args = {
   ...baseArgs,
-  initHistory: [["X", "X", "X", null, null, null, null, null, null]],
+  initHistory: [
+    ["X", "X", "X", "BLANK", "BLANK", "BLANK", "BLANK", "BLANK", "BLANK"],
+  ],
 }
 
 export const WinO = Template.bind({})
 WinO.args = {
   ...baseArgs,
-  initHistory: [["O", "O", "O", null, null, null, null, null, null]],
+  initHistory: [
+    ["O", "O", "O", "BLANK", "BLANK", "BLANK", "BLANK", "BLANK", "BLANK"],
+  ],
 }
 
 export const Draw = Template.bind({})

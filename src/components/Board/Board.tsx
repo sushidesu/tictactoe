@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { Marker } from "tictactoe"
+import { Marker } from "model/tictactoe-interface"
 import { Square } from "components/Square"
 
 export type Props = {

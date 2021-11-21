@@ -1,6 +1,7 @@
 import React from "react"
 import { Game, Props } from "components/Game"
-import { Marker, History, Player } from "tictactoe"
+import { Player, Marker } from "model/tictactoe-interface"
+import { History } from "tictactoe"
 
 export const TicTacToe = () => {
   const WIDTH = 3

@@ -1,8 +1,5 @@
 import { useState } from "react"
-
-export type Player = "X" | "O"
-
-export type Marker = Player | null
+import { Player, Marker } from "../model/tictactoe-interface"
 
 export type History = readonly Marker[][]
 
@@ -19,8 +16,12 @@ export const calculateWinner = (squares: Marker[]): Player | null => {
   ]
   for (const line of lines) {
     const [a, b, c] = line
-    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a]
+    const A = squares[a]
+    const B = squares[b]
+    const C = squares[c]
+
+    if (A !== "BLANK" && A === B && A === C) {
+      return A
     }
   }
   return null
