@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { range } from "util/range"
-import { Player, Marker } from "model/tictactoe-interface"
+import { Player, Marker, Status } from "model/tictactoe-interface"
 
 export type History = readonly Marker[][]
 
@@ -109,8 +109,6 @@ export const useTicTacToe = ({
       },
     })
   )
-
-  type Status = `WIN_X` | `WIN_O` | "DRAW" | `NEXT_X` | `NEXT_O`
 
   const status: Status = winner
     ? `WIN_${winner}`

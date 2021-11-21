@@ -28,23 +28,6 @@ export const Game: React.FC<Props> = ({
     markO,
   })
 
-  const renderStatus = (): string => {
-    const NEXT_IS = `Next Player: `
-    const WINNER = `Winner: `
-    switch (status) {
-      case "NEXT_X":
-        return NEXT_IS + "X"
-      case "NEXT_O":
-        return NEXT_IS + "O"
-      case "DRAW":
-        return "Draw"
-      case "WIN_X":
-        return WINNER + "X"
-      case "WIN_O":
-        return WINNER + "O"
-    }
-  }
-
   return (
     <Wrapper>
       <div className="game-board">
@@ -62,7 +45,7 @@ export const Game: React.FC<Props> = ({
         ))}
       </div>
       <div className="game-info">
-        <GameStatus>{renderStatus()}</GameStatus>
+        <GameStatus status={status} />
         <ol>
           {histories.map((h) => (
             <li key={h.index}>
