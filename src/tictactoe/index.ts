@@ -1,5 +1,6 @@
 import { useState } from "react"
-import { Player, Marker } from "../model/tictactoe-interface"
+import { range } from "util/range"
+import { Player, Marker } from "model/tictactoe-interface"
 
 export type History = readonly Marker[][]
 
@@ -30,6 +31,8 @@ export const calculateWinner = (squares: Marker[]): Player | null => {
 export type UseTicTacToeProps = {
   initHistory: History
   firstPlayer: Player
+  width: number
+  height: number
   markX: string
   markO: string
 }
@@ -37,6 +40,8 @@ export type UseTicTacToeProps = {
 export const useTicTacToe = ({
   initHistory,
   firstPlayer,
+  width,
+  height,
   markX,
   markO,
 }: UseTicTacToeProps) => {
@@ -73,6 +78,25 @@ export const useTicTacToe = ({
     }
   }
 
+  type Cell = {
+    index: number
+    marker: Marker
+    handler: () => void
+  }
+
+  const board: readonly Cell[][] = [...range(height)].map((h) =>
+    [...range(width)].map((w) => {
+      const index = h * width + w
+      return {
+        index,
+        marker: squares[index],
+        handler: () => {
+          placeMarker(index)
+        },
+      }
+    })
+  )
+
   type Status = `WIN_X` | `WIN_O` | "DRAW" | `NEXT_X` | `NEXT_O`
 
   const status: Status = winner
@@ -86,6 +110,7 @@ export const useTicTacToe = ({
   return {
     status,
     squares,
+    board,
     history,
     xIsNext,
     placeMarker,

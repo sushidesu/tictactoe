@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { useTicTacToe, UseTicTacToeProps } from "tictactoe"
-import { Board } from "components/Board"
+import { BoardRow } from "components/BoardRow"
+import { Square } from "components/Square"
 import { GameStatus } from "components/GameStatus"
 import { HistoryButton } from "components/HistoryButton"
 
@@ -18,16 +19,14 @@ export const Game: React.FC<Props> = ({
   markX = "X",
   markO = "O",
 }) => {
-  const {
-    status,
-    squares,
-    history,
-    placeMarker,
-    jumpTo,
-    renderMarker,
-  } = useTicTacToe({ initHistory, firstPlayer, markX, markO })
-
-  const onSquareClick = (index: number) => () => placeMarker(index)
+  const { status, history, board, jumpTo } = useTicTacToe({
+    initHistory,
+    firstPlayer,
+    width,
+    height,
+    markX,
+    markO,
+  })
 
   const renderStatus = (): string => {
     const NEXT_IS = `Next Player: `
@@ -49,13 +48,18 @@ export const Game: React.FC<Props> = ({
   return (
     <Wrapper>
       <div className="game-board">
-        <Board
-          width={width}
-          height={height}
-          squares={squares}
-          onSquareClick={onSquareClick}
-          renderMarker={renderMarker}
-        />
+        {board.map((row, row_i) => (
+          <BoardRow key={row_i}>
+            {row.map((cell) => (
+              <Square
+                key={cell.index}
+                index={cell.index}
+                marker={cell.marker}
+                onClick={cell.handler}
+              />
+            ))}
+          </BoardRow>
+        ))}
       </div>
       <div className="game-info">
         <GameStatus>{renderStatus()}</GameStatus>
