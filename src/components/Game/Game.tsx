@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { calculateWinner, useHandleBoard } from "tictactoe"
+import { useTicTacToe, UseTicTacToeProps } from "tictactoe"
 import { Board } from "components/Board"
 
-export type Props = ReturnType<typeof useHandleBoard> & {
+export type Props = UseTicTacToeProps & {
   width: number
   height: number
 }
@@ -11,19 +11,19 @@ export type Props = ReturnType<typeof useHandleBoard> & {
 export const Game: React.FC<Props> = ({
   width,
   height,
-  squares,
-  history,
-  xIsNext,
-  placeMarker,
-  jumpTo,
-  renderMarker,
+  firstPlayer,
+  initHistory,
+  markX = "X",
+  markO = "O",
 }) => {
-  const winner = calculateWinner(squares)
-  const status = winner
-    ? `Winner: ${renderMarker(winner)}`
-    : squares.every((square) => square !== null)
-    ? `Draw`
-    : `Next player: ${xIsNext ? renderMarker("X") : renderMarker("O")}`
+  const {
+    status,
+    squares,
+    history,
+    placeMarker,
+    jumpTo,
+    renderMarker,
+  } = useTicTacToe({ initHistory, firstPlayer, markX, markO })
 
   const onSquareClick = (index: number) => () => placeMarker(index)
 
@@ -39,7 +39,9 @@ export const Game: React.FC<Props> = ({
         />
       </div>
       <div className="game-info">
-        <div className="status">{status}</div>
+        <div className="status" data-testid="status">
+          {status}
+        </div>
         <ol>
           {history.map((_squares, move) => {
             const desc = move ? `Go to # ${move}` : "Go to start"

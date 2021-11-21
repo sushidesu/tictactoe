@@ -2,12 +2,17 @@ import React from "react"
 import styled from "@emotion/styled"
 
 export type Props = {
+  index: number
   marker: string | null
   onClick: () => void
 }
 
-export const Square: React.FC<Props> = ({ marker, onClick }) => {
-  return <Button onClick={onClick}>{marker}</Button>
+export const Square: React.FC<Props> = ({ marker, onClick, index }) => {
+  return (
+    <Button onClick={onClick} data-testid={`square: ${index}`}>
+      {marker}
+    </Button>
+  )
 }
 
 const Button = styled.button`
@@ -22,7 +27,6 @@ const Button = styled.button`
   padding: 0;
   text-align: center;
   width: 34px;
-  color: #fa3a3a;
 
   &:focus {
     outline: none;

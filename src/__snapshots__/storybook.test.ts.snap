@@ -60,30 +60,17 @@ exports[`Storyshots TicTacToe/App Default 1`] = `
           >
             <button
               className="emotion-2"
+              data-testid="square: 0"
               onClick={[Function]}
             />
             <button
               className="emotion-2"
+              data-testid="square: 1"
               onClick={[Function]}
             />
             <button
               className="emotion-2"
-              onClick={[Function]}
-            />
-          </div>
-          <div
-            className="board-row"
-          >
-            <button
-              className="emotion-2"
-              onClick={[Function]}
-            />
-            <button
-              className="emotion-2"
-              onClick={[Function]}
-            />
-            <button
-              className="emotion-2"
+              data-testid="square: 2"
               onClick={[Function]}
             />
           </div>
@@ -92,14 +79,36 @@ exports[`Storyshots TicTacToe/App Default 1`] = `
           >
             <button
               className="emotion-2"
+              data-testid="square: 3"
               onClick={[Function]}
             />
             <button
               className="emotion-2"
+              data-testid="square: 4"
               onClick={[Function]}
             />
             <button
               className="emotion-2"
+              data-testid="square: 5"
+              onClick={[Function]}
+            />
+          </div>
+          <div
+            className="board-row"
+          >
+            <button
+              className="emotion-2"
+              data-testid="square: 6"
+              onClick={[Function]}
+            />
+            <button
+              className="emotion-2"
+              data-testid="square: 7"
+              onClick={[Function]}
+            />
+            <button
+              className="emotion-2"
+              data-testid="square: 8"
               onClick={[Function]}
             />
           </div>
@@ -110,8 +119,9 @@ exports[`Storyshots TicTacToe/App Default 1`] = `
       >
         <div
           className="status"
+          data-testid="status"
         >
-          Next player: X
+          Next Player: X
         </div>
         <ol>
           <li>
@@ -166,40 +176,21 @@ exports[`Storyshots TicTacToe/Board All O 1`] = `
     >
       <button
         className="emotion-1"
+        data-testid="square: 0"
         onClick={[Function]}
       >
         O
       </button>
       <button
         className="emotion-1"
+        data-testid="square: 1"
         onClick={[Function]}
       >
         O
       </button>
       <button
         className="emotion-1"
-        onClick={[Function]}
-      >
-        O
-      </button>
-    </div>
-    <div
-      className="board-row"
-    >
-      <button
-        className="emotion-1"
-        onClick={[Function]}
-      >
-        O
-      </button>
-      <button
-        className="emotion-1"
-        onClick={[Function]}
-      >
-        O
-      </button>
-      <button
-        className="emotion-1"
+        data-testid="square: 2"
         onClick={[Function]}
       >
         O
@@ -210,18 +201,46 @@ exports[`Storyshots TicTacToe/Board All O 1`] = `
     >
       <button
         className="emotion-1"
+        data-testid="square: 3"
         onClick={[Function]}
       >
         O
       </button>
       <button
         className="emotion-1"
+        data-testid="square: 4"
         onClick={[Function]}
       >
         O
       </button>
       <button
         className="emotion-1"
+        data-testid="square: 5"
+        onClick={[Function]}
+      >
+        O
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="emotion-1"
+        data-testid="square: 6"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="emotion-1"
+        data-testid="square: 7"
+        onClick={[Function]}
+      >
+        O
+      </button>
+      <button
+        className="emotion-1"
+        data-testid="square: 8"
         onClick={[Function]}
       >
         O
@@ -269,40 +288,21 @@ exports[`Storyshots TicTacToe/Board All Triangle 1`] = `
     >
       <button
         className="emotion-1"
+        data-testid="square: 0"
         onClick={[Function]}
       >
         △
       </button>
       <button
         className="emotion-1"
+        data-testid="square: 1"
         onClick={[Function]}
       >
         △
       </button>
       <button
         className="emotion-1"
-        onClick={[Function]}
-      >
-        △
-      </button>
-    </div>
-    <div
-      className="board-row"
-    >
-      <button
-        className="emotion-1"
-        onClick={[Function]}
-      >
-        △
-      </button>
-      <button
-        className="emotion-1"
-        onClick={[Function]}
-      >
-        △
-      </button>
-      <button
-        className="emotion-1"
+        data-testid="square: 2"
         onClick={[Function]}
       >
         △
@@ -313,18 +313,46 @@ exports[`Storyshots TicTacToe/Board All Triangle 1`] = `
     >
       <button
         className="emotion-1"
+        data-testid="square: 3"
         onClick={[Function]}
       >
         △
       </button>
       <button
         className="emotion-1"
+        data-testid="square: 4"
         onClick={[Function]}
       >
         △
       </button>
       <button
         className="emotion-1"
+        data-testid="square: 5"
+        onClick={[Function]}
+      >
+        △
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="emotion-1"
+        data-testid="square: 6"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="emotion-1"
+        data-testid="square: 7"
+        onClick={[Function]}
+      >
+        △
+      </button>
+      <button
+        className="emotion-1"
+        data-testid="square: 8"
         onClick={[Function]}
       >
         △
@@ -372,40 +400,21 @@ exports[`Storyshots TicTacToe/Board All X 1`] = `
     >
       <button
         className="emotion-1"
+        data-testid="square: 0"
         onClick={[Function]}
       >
         X
       </button>
       <button
         className="emotion-1"
+        data-testid="square: 1"
         onClick={[Function]}
       >
         X
       </button>
       <button
         className="emotion-1"
-        onClick={[Function]}
-      >
-        X
-      </button>
-    </div>
-    <div
-      className="board-row"
-    >
-      <button
-        className="emotion-1"
-        onClick={[Function]}
-      >
-        X
-      </button>
-      <button
-        className="emotion-1"
-        onClick={[Function]}
-      >
-        X
-      </button>
-      <button
-        className="emotion-1"
+        data-testid="square: 2"
         onClick={[Function]}
       >
         X
@@ -416,18 +425,46 @@ exports[`Storyshots TicTacToe/Board All X 1`] = `
     >
       <button
         className="emotion-1"
+        data-testid="square: 3"
         onClick={[Function]}
       >
         X
       </button>
       <button
         className="emotion-1"
+        data-testid="square: 4"
         onClick={[Function]}
       >
         X
       </button>
       <button
         className="emotion-1"
+        data-testid="square: 5"
+        onClick={[Function]}
+      >
+        X
+      </button>
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="emotion-1"
+        data-testid="square: 6"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="emotion-1"
+        data-testid="square: 7"
+        onClick={[Function]}
+      >
+        X
+      </button>
+      <button
+        className="emotion-1"
+        data-testid="square: 8"
         onClick={[Function]}
       >
         X
@@ -475,30 +512,17 @@ exports[`Storyshots TicTacToe/Board Default 1`] = `
     >
       <button
         className="emotion-1"
+        data-testid="square: 0"
         onClick={[Function]}
       />
       <button
         className="emotion-1"
+        data-testid="square: 1"
         onClick={[Function]}
       />
       <button
         className="emotion-1"
-        onClick={[Function]}
-      />
-    </div>
-    <div
-      className="board-row"
-    >
-      <button
-        className="emotion-1"
-        onClick={[Function]}
-      />
-      <button
-        className="emotion-1"
-        onClick={[Function]}
-      />
-      <button
-        className="emotion-1"
+        data-testid="square: 2"
         onClick={[Function]}
       />
     </div>
@@ -507,14 +531,36 @@ exports[`Storyshots TicTacToe/Board Default 1`] = `
     >
       <button
         className="emotion-1"
+        data-testid="square: 3"
         onClick={[Function]}
       />
       <button
         className="emotion-1"
+        data-testid="square: 4"
         onClick={[Function]}
       />
       <button
         className="emotion-1"
+        data-testid="square: 5"
+        onClick={[Function]}
+      />
+    </div>
+    <div
+      className="board-row"
+    >
+      <button
+        className="emotion-1"
+        data-testid="square: 6"
+        onClick={[Function]}
+      />
+      <button
+        className="emotion-1"
+        data-testid="square: 7"
+        onClick={[Function]}
+      />
+      <button
+        className="emotion-1"
+        data-testid="square: 8"
         onClick={[Function]}
       />
     </div>
@@ -581,30 +627,17 @@ exports[`Storyshots TicTacToe/Game Default 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 0"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 1"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
-            onClick={[Function]}
-          />
-        </div>
-        <div
-          className="board-row"
-        >
-          <button
-            className="emotion-2"
-            onClick={[Function]}
-          />
-          <button
-            className="emotion-2"
-            onClick={[Function]}
-          />
-          <button
-            className="emotion-2"
+            data-testid="square: 2"
             onClick={[Function]}
           />
         </div>
@@ -613,14 +646,36 @@ exports[`Storyshots TicTacToe/Game Default 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 3"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 4"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 5"
+            onClick={[Function]}
+          />
+        </div>
+        <div
+          className="board-row"
+        >
+          <button
+            className="emotion-2"
+            data-testid="square: 6"
+            onClick={[Function]}
+          />
+          <button
+            className="emotion-2"
+            data-testid="square: 7"
+            onClick={[Function]}
+          />
+          <button
+            className="emotion-2"
+            data-testid="square: 8"
             onClick={[Function]}
           />
         </div>
@@ -631,8 +686,9 @@ exports[`Storyshots TicTacToe/Game Default 1`] = `
     >
       <div
         className="status"
+        data-testid="status"
       >
-        Next player: X
+        Draw
       </div>
       <ol>
         <li>
@@ -707,18 +763,21 @@ exports[`Storyshots TicTacToe/Game Draw 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 0"
             onClick={[Function]}
           >
             O
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 1"
             onClick={[Function]}
           >
             X
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 2"
             onClick={[Function]}
           >
             O
@@ -729,18 +788,21 @@ exports[`Storyshots TicTacToe/Game Draw 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 3"
             onClick={[Function]}
           >
             X
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 4"
             onClick={[Function]}
           >
             O
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 5"
             onClick={[Function]}
           >
             X
@@ -751,18 +813,21 @@ exports[`Storyshots TicTacToe/Game Draw 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 6"
             onClick={[Function]}
           >
             X
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 7"
             onClick={[Function]}
           >
             O
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 8"
             onClick={[Function]}
           >
             X
@@ -775,6 +840,7 @@ exports[`Storyshots TicTacToe/Game Draw 1`] = `
     >
       <div
         className="status"
+        data-testid="status"
       >
         Draw
       </div>
@@ -851,18 +917,21 @@ exports[`Storyshots TicTacToe/Game Win O 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 0"
             onClick={[Function]}
           >
             O
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 1"
             onClick={[Function]}
           >
             O
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 2"
             onClick={[Function]}
           >
             O
@@ -873,14 +942,17 @@ exports[`Storyshots TicTacToe/Game Win O 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 3"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 4"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 5"
             onClick={[Function]}
           />
         </div>
@@ -889,14 +961,17 @@ exports[`Storyshots TicTacToe/Game Win O 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 6"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 7"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 8"
             onClick={[Function]}
           />
         </div>
@@ -907,6 +982,7 @@ exports[`Storyshots TicTacToe/Game Win O 1`] = `
     >
       <div
         className="status"
+        data-testid="status"
       >
         Winner: O
       </div>
@@ -983,18 +1059,21 @@ exports[`Storyshots TicTacToe/Game Win X 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 0"
             onClick={[Function]}
           >
             X
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 1"
             onClick={[Function]}
           >
             X
           </button>
           <button
             className="emotion-2"
+            data-testid="square: 2"
             onClick={[Function]}
           >
             X
@@ -1005,14 +1084,17 @@ exports[`Storyshots TicTacToe/Game Win X 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 3"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 4"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 5"
             onClick={[Function]}
           />
         </div>
@@ -1021,14 +1103,17 @@ exports[`Storyshots TicTacToe/Game Win X 1`] = `
         >
           <button
             className="emotion-2"
+            data-testid="square: 6"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 7"
             onClick={[Function]}
           />
           <button
             className="emotion-2"
+            data-testid="square: 8"
             onClick={[Function]}
           />
         </div>
@@ -1039,6 +1124,7 @@ exports[`Storyshots TicTacToe/Game Win X 1`] = `
     >
       <div
         className="status"
+        data-testid="status"
       >
         Winner: X
       </div>
@@ -1078,6 +1164,7 @@ exports[`Storyshots TicTacToe/Square Default 1`] = `
 <div>
   <button
     className="emotion-0"
+    data-testid="square: 0"
     onClick={[Function]}
   />
 </div>
@@ -1105,6 +1192,7 @@ exports[`Storyshots TicTacToe/Square O 1`] = `
 <div>
   <button
     className="emotion-0"
+    data-testid="square: 0"
     onClick={[Function]}
   >
     O
@@ -1134,6 +1222,7 @@ exports[`Storyshots TicTacToe/Square X 1`] = `
 <div>
   <button
     className="emotion-0"
+    data-testid="square: 0"
     onClick={[Function]}
   >
     X
