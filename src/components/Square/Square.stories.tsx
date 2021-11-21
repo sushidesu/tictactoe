@@ -13,7 +13,7 @@ const Template: Story<Props> = (args) => <Square {...args} />
 
 const baseArgs: Props = {
   index: 0,
-  marker: null,
+  marker: "BLANK",
   onClick: action("clicked"),
 }
 

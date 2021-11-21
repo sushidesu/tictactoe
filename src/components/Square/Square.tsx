@@ -1,16 +1,17 @@
 import React from "react"
 import styled from "@emotion/styled"
+import { Marker } from "model/tictactoe-interface"
 
 export type Props = {
   index: number
-  marker: string | null
+  marker: Marker
   onClick: () => void
 }
 
 export const Square: React.FC<Props> = ({ marker, onClick, index }) => {
   return (
     <Button onClick={onClick} data-testid={`square: ${index}`}>
-      {marker}
+      {marker === "BLANK" ? "" : marker === "X" ? "X" : "O"}
     </Button>
   )
 }

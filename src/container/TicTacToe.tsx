@@ -6,7 +6,7 @@ import { History } from "tictactoe"
 export const TicTacToe = () => {
   const WIDTH = 3
   const HEIGHT = 3
-  const INIT_BOARD: Marker[] = Array(WIDTH * HEIGHT).fill(null)
+  const INIT_BOARD: Marker[] = Array(WIDTH * HEIGHT).fill("BLANK")
   const INIT_HISTORY: History = [INIT_BOARD]
   const FIRST_PLAYER: Player = "X"
   const MARK_X = "X"

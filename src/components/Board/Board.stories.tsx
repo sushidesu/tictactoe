@@ -16,13 +16,12 @@ const baseArgs: Props = {
   height: 3,
   onSquareClick: (index) => action(`clicked: ${index}`),
   squares: [],
-  renderMarker: (marker) => marker,
 }
 
 export const Default = Template.bind({})
 Default.args = {
   ...baseArgs,
-  squares: Array(9).fill(null),
+  squares: Array(9).fill("BLANK"),
 }
 
 export const AllX = Template.bind({})
