@@ -97,6 +97,19 @@ export const useTicTacToe = ({
     })
   )
 
+  type HistoryItem = {
+    index: number
+    handler: () => void
+  }
+  const histories: readonly HistoryItem[] = [...range(history.length)].map(
+    (index) => ({
+      index,
+      handler: () => {
+        jumpTo(index)
+      },
+    })
+  )
+
   type Status = `WIN_X` | `WIN_O` | "DRAW" | `NEXT_X` | `NEXT_O`
 
   const status: Status = winner
@@ -109,12 +122,8 @@ export const useTicTacToe = ({
 
   return {
     status,
-    squares,
     board,
-    history,
-    xIsNext,
-    placeMarker,
-    jumpTo,
+    histories,
     renderMarker,
   }
 }

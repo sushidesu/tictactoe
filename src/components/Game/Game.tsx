@@ -19,7 +19,7 @@ export const Game: React.FC<Props> = ({
   markX = "X",
   markO = "O",
 }) => {
-  const { status, history, board, jumpTo } = useTicTacToe({
+  const { status, histories, board } = useTicTacToe({
     initHistory,
     firstPlayer,
     width,
@@ -64,9 +64,9 @@ export const Game: React.FC<Props> = ({
       <div className="game-info">
         <GameStatus>{renderStatus()}</GameStatus>
         <ol>
-          {history.map((_, index) => (
-            <li key={index}>
-              <HistoryButton index={index} onClick={() => jumpTo(index)} />
+          {histories.map((h) => (
+            <li key={h.index}>
+              <HistoryButton index={h.index} onClick={h.handler} />
             </li>
           ))}
         </ol>
