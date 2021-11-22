@@ -1,5 +1,6 @@
 import React from "react"
 import { Story, Meta } from "@storybook/react/types-6-0"
+import { range } from "util/range"
 
 import { Game, GameProps } from "./Game"
 
@@ -14,7 +15,7 @@ const baseArgs: GameProps = {
   width: 3,
   height: 3,
   firstPlayer: "X",
-  initHistory: [[]],
+  initHistory: [[...range(9)].map(() => "BLANK")],
   markX: "X",
   markO: "O",
 }
