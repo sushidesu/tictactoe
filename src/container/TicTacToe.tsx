@@ -1,5 +1,5 @@
 import React from "react"
-import { Game, Props } from "components/Game"
+import { Game, GameProps } from "components/Game"
 import { Player, Marker } from "model/tictactoe-interface"
 
 export const TicTacToe = () => {
@@ -11,7 +11,7 @@ export const TicTacToe = () => {
   const MARK_X = "X"
   const MARK_O = "O"
 
-  const props: Props = {
+  const props: GameProps = {
     width: WIDTH,
     height: HEIGHT,
     initHistory: INIT_HISTORY,

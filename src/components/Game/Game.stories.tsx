@@ -1,16 +1,16 @@
 import React from "react"
 import { Story, Meta } from "@storybook/react/types-6-0"
 
-import { Game, Props } from "./Game"
+import { Game, GameProps } from "./Game"
 
-const meta: Meta<Props> = {
+const meta: Meta<GameProps> = {
   title: "TicTacToe/Game",
   component: Game,
 }
 
-const Template: Story<Props> = (args) => <Game {...args} />
+const Template: Story<GameProps> = (args) => <Game {...args} />
 
-const baseArgs: Props = {
+const baseArgs: GameProps = {
   width: 3,
   height: 3,
   firstPlayer: "X",

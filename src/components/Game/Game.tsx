@@ -6,12 +6,12 @@ import { Square } from "components/Square"
 import { GameStatus } from "components/GameStatus"
 import { HistoryButton } from "components/HistoryButton"
 
-export type Props = UseTicTacToeProps & {
+export type GameProps = UseTicTacToeProps & {
   markX?: string
   markO?: string
 }
 
-export const Game: React.FC<Props> = ({
+export const Game: React.FC<GameProps> = ({
   width,
   height,
   firstPlayer,
