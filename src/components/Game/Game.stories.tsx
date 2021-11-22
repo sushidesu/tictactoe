@@ -46,4 +46,11 @@ Draw.args = {
   initHistory: [["O", "X", "O", "X", "O", "X", "X", "O", "X"]],
 }
 
+export const AllTriangle = Template.bind({})
+AllTriangle.args = {
+  ...baseArgs,
+  initHistory: [["X", "X", "X", "X", "X", "X", "X", "X", "X"]],
+  markX: "△",
+}
+
 export default meta
