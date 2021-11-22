@@ -6,18 +6,15 @@ import { calculateWinner } from "model/calculate-winner"
 type History = readonly Marker[][]
 
 export type UseTicTacToeProps = {
-  initHistory: History
-  firstPlayer: Player
   width: number
   height: number
+  firstPlayer: Player
+  initHistory: History
 }
 
-export const useTicTacToe = ({
-  initHistory,
-  firstPlayer,
-  width,
-  height,
-}: UseTicTacToeProps) => {
+export const useTicTacToe = (props: UseTicTacToeProps) => {
+  const { width, height, initHistory, firstPlayer } = props
+
   const [stepNumber, setStepNumber] = useState(0)
   const [history, setHistory] = useState<History>(initHistory)
 
