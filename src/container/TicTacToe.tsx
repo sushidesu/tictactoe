@@ -1,17 +1,20 @@
 import React from "react"
-import { Game, Props } from "components/Game"
-import { Marker, History, Player } from "tictactoe"
+import { Game, GameProps } from "components/Game"
+import { Player, Marker } from "model/tictactoe-interface"
+import { range } from "util/range"
 
 export const TicTacToe = () => {
   const WIDTH = 3
   const HEIGHT = 3
-  const INIT_BOARD: Marker[] = Array(WIDTH * HEIGHT).fill(null)
-  const INIT_HISTORY: History = [INIT_BOARD]
+  const INIT_BOARD: Marker[] = [...range(WIDTH * HEIGHT)].map<Marker>(
+    () => "BLANK"
+  )
+  const INIT_HISTORY: Marker[][] = [INIT_BOARD]
   const FIRST_PLAYER: Player = "X"
   const MARK_X = "X"
   const MARK_O = "O"
 
-  const props: Props = {
+  const props: GameProps = {
     width: WIDTH,
     height: HEIGHT,
     initHistory: INIT_HISTORY,

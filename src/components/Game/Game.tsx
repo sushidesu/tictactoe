@@ -1,14 +1,17 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { useTicTacToe, UseTicTacToeProps } from "tictactoe"
-import { Board } from "components/Board"
+import { useTicTacToe, UseTicTacToeProps } from "hooks/useTicTacToe"
+import { BoardRow } from "components/BoardRow"
+import { Square } from "components/Square"
+import { GameStatus } from "components/GameStatus"
+import { HistoryButton } from "components/HistoryButton"
 
-export type Props = UseTicTacToeProps & {
-  width: number
-  height: number
+export type GameProps = UseTicTacToeProps & {
+  markX?: string
+  markO?: string
 }
 
-export const Game: React.FC<Props> = ({
+export const Game: React.FC<GameProps> = ({
   width,
   height,
   firstPlayer,
@@ -16,41 +19,38 @@ export const Game: React.FC<Props> = ({
   markX = "X",
   markO = "O",
 }) => {
-  const {
-    status,
-    squares,
-    history,
-    placeMarker,
-    jumpTo,
-    renderMarker,
-  } = useTicTacToe({ initHistory, firstPlayer, markX, markO })
-
-  const onSquareClick = (index: number) => () => placeMarker(index)
+  const { status, histories, board } = useTicTacToe({
+    initHistory,
+    firstPlayer,
+    width,
+    height,
+  })
 
   return (
     <Wrapper>
       <div className="game-board">
-        <Board
-          width={width}
-          height={height}
-          squares={squares}
-          onSquareClick={onSquareClick}
-          renderMarker={renderMarker}
-        />
+        {board.map((row, row_i) => (
+          <BoardRow key={row_i}>
+            {row.map((cell) => (
+              <Square
+                key={cell.index}
+                index={cell.index}
+                marker={cell.marker}
+                markX={markX}
+                onClick={cell.handler}
+              />
+            ))}
+          </BoardRow>
+        ))}
       </div>
       <div className="game-info">
-        <div className="status" data-testid="status">
-          {status}
-        </div>
+        <GameStatus status={status} markX={markX} markO={markO} />
         <ol>
-          {history.map((_squares, move) => {
-            const desc = move ? `Go to # ${move}` : "Go to start"
-            return (
-              <li key={move}>
-                <button onClick={() => jumpTo(move)}>{desc}</button>
-              </li>
-            )
-          })}
+          {histories.map((h) => (
+            <li key={h.index}>
+              <HistoryButton index={h.index} onClick={h.handler} />
+            </li>
+          ))}
         </ol>
       </div>
     </Wrapper>
@@ -61,8 +61,5 @@ const Wrapper = styled.div`
   display: flex;
   .game-info {
     margin-left: 1rem;
-    .status {
-      font-weight: bold;
-    }
   }
 `

@@ -1,20 +1,21 @@
 import React from "react"
 import { Story, Meta } from "@storybook/react/types-6-0"
+import { range } from "util/range"
 
-import { Game, Props } from "./Game"
+import { Game, GameProps } from "./Game"
 
-const meta: Meta<Props> = {
+const meta: Meta<GameProps> = {
   title: "TicTacToe/Game",
   component: Game,
 }
 
-const Template: Story<Props> = (args) => <Game {...args} />
+const Template: Story<GameProps> = (args) => <Game {...args} />
 
-const baseArgs: Props = {
+const baseArgs: GameProps = {
   width: 3,
   height: 3,
   firstPlayer: "X",
-  initHistory: [[]],
+  initHistory: [[...range(9)].map(() => "BLANK")],
   markX: "X",
   markO: "O",
 }
@@ -26,19 +27,30 @@ Default.args = {
 export const WinX = Template.bind({})
 WinX.args = {
   ...baseArgs,
-  initHistory: [["X", "X", "X", null, null, null, null, null, null]],
+  initHistory: [
+    ["X", "X", "X", "BLANK", "BLANK", "BLANK", "BLANK", "BLANK", "BLANK"],
+  ],
 }
 
 export const WinO = Template.bind({})
 WinO.args = {
   ...baseArgs,
-  initHistory: [["O", "O", "O", null, null, null, null, null, null]],
+  initHistory: [
+    ["O", "O", "O", "BLANK", "BLANK", "BLANK", "BLANK", "BLANK", "BLANK"],
+  ],
 }
 
 export const Draw = Template.bind({})
 Draw.args = {
   ...baseArgs,
   initHistory: [["O", "X", "O", "X", "O", "X", "X", "O", "X"]],
+}
+
+export const AllTriangle = Template.bind({})
+AllTriangle.args = {
+  ...baseArgs,
+  initHistory: [["X", "X", "X", "X", "X", "X", "X", "X", "X"]],
+  markX: "△",
 }
 
 export default meta
