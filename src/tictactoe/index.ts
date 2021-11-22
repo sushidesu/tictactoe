@@ -3,7 +3,7 @@ import { range } from "util/range"
 import { Player, Marker, Status } from "model/tictactoe-interface"
 import { calculateWinner } from "model/calculate-winner"
 
-export type History = readonly Marker[][]
+type History = readonly Marker[][]
 
 export type UseTicTacToeProps = {
   initHistory: History
