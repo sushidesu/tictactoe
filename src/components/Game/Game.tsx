@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { useTicTacToe, UseTicTacToeProps } from "tictactoe"
+import { useTicTacToe, UseTicTacToeProps } from "hooks/useTicTacToe"
 import { BoardRow } from "components/BoardRow"
 import { Square } from "components/Square"
 import { GameStatus } from "components/GameStatus"
