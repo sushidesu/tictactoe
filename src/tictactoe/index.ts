@@ -10,8 +10,6 @@ export type UseTicTacToeProps = {
   firstPlayer: Player
   width: number
   height: number
-  markX: string
-  markO: string
 }
 
 export const useTicTacToe = ({
@@ -19,8 +17,6 @@ export const useTicTacToe = ({
   firstPlayer,
   width,
   height,
-  markX,
-  markO,
 }: UseTicTacToeProps) => {
   const [stepNumber, setStepNumber] = useState(0)
   const [history, setHistory] = useState<History>(initHistory)
@@ -45,14 +41,6 @@ export const useTicTacToe = ({
 
   const jumpTo = (step: number) => {
     setStepNumber(step)
-  }
-
-  const renderMarker = (mark: Marker) => {
-    if (mark) {
-      return mark === "X" ? markX : markO
-    } else {
-      return null
-    }
   }
 
   type Cell = {
@@ -97,6 +85,5 @@ export const useTicTacToe = ({
     status,
     board,
     histories,
-    renderMarker,
   }
 }

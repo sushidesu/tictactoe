@@ -7,8 +7,8 @@ import { GameStatus } from "components/GameStatus"
 import { HistoryButton } from "components/HistoryButton"
 
 export type Props = UseTicTacToeProps & {
-  width: number
-  height: number
+  markX?: string
+  markO?: string
 }
 
 export const Game: React.FC<Props> = ({
@@ -24,8 +24,6 @@ export const Game: React.FC<Props> = ({
     firstPlayer,
     width,
     height,
-    markX,
-    markO,
   })
 
   return (
@@ -39,7 +37,6 @@ export const Game: React.FC<Props> = ({
                 index={cell.index}
                 marker={cell.marker}
                 markX={markX}
-                markO={markO}
                 onClick={cell.handler}
               />
             ))}
