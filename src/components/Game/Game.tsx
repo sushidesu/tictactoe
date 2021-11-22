@@ -38,6 +38,8 @@ export const Game: React.FC<Props> = ({
                 key={cell.index}
                 index={cell.index}
                 marker={cell.marker}
+                markX={markX}
+                markO={markO}
                 onClick={cell.handler}
               />
             ))}
@@ -45,7 +47,7 @@ export const Game: React.FC<Props> = ({
         ))}
       </div>
       <div className="game-info">
-        <GameStatus status={status} />
+        <GameStatus status={status} markX={markX} markO={markO} />
         <ol>
           {histories.map((h) => (
             <li key={h.index}>

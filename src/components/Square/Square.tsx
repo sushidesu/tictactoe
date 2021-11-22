@@ -5,13 +5,21 @@ import { Marker } from "model/tictactoe-interface"
 export type Props = {
   index: number
   marker: Marker
+  markX?: string
+  markO?: string
   onClick: () => void
 }
 
-export const Square: React.FC<Props> = ({ marker, onClick, index }) => {
+export const Square: React.FC<Props> = ({
+  marker,
+  onClick,
+  index,
+  markX = "X",
+  markO = "O",
+}) => {
   return (
     <Button onClick={onClick} data-testid={`square: ${index}`}>
-      {marker === "BLANK" ? "" : marker === "X" ? "X" : "O"}
+      {marker === "BLANK" ? "" : marker === "X" ? markX : markO}
     </Button>
   )
 }
