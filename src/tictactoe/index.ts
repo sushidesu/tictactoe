@@ -12,7 +12,26 @@ export type UseTicTacToeProps = {
   initHistory: History
 }
 
-export const useTicTacToe = (props: UseTicTacToeProps) => {
+type Cell = {
+  index: number
+  marker: Marker
+  handler: () => void
+}
+
+type HistoryItem = {
+  index: number
+  handler: () => void
+}
+
+type UseTicTacToeResponse = {
+  status: Status
+  board: readonly Cell[][]
+  histories: readonly HistoryItem[]
+}
+
+export const useTicTacToe = (
+  props: UseTicTacToeProps
+): UseTicTacToeResponse => {
   const { width, height, initHistory, firstPlayer } = props
 
   const [stepNumber, setStepNumber] = useState(0)
@@ -40,11 +59,11 @@ export const useTicTacToe = (props: UseTicTacToeProps) => {
     setStepNumber(step)
   }
 
-  type Cell = {
-    index: number
-    marker: Marker
-    handler: () => void
-  }
+  const status: Status = winner
+    ? `WIN_${winner}`
+    : squares.some((square) => square === "BLANK")
+    ? `NEXT_${nextPlayer}`
+    : "DRAW"
 
   const board: readonly Cell[][] = [...range(height)].map((h) =>
     [...range(width)].map((w) => {
@@ -59,10 +78,6 @@ export const useTicTacToe = (props: UseTicTacToeProps) => {
     })
   )
 
-  type HistoryItem = {
-    index: number
-    handler: () => void
-  }
   const histories: readonly HistoryItem[] = [...range(history.length)].map(
     (index) => ({
       index,
@@ -71,12 +86,6 @@ export const useTicTacToe = (props: UseTicTacToeProps) => {
       },
     })
   )
-
-  const status: Status = winner
-    ? `WIN_${winner}`
-    : squares.some((square) => square === "BLANK")
-    ? `NEXT_${nextPlayer}`
-    : "DRAW"
 
   return {
     status,
